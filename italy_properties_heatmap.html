@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6bb41bcda1a535c8acd0585ba4efd94e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6bb41bcda1a535c8acd0585ba4efd94e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6bb41bcda1a535c8acd0585ba4efd94e = L.map(
+                "map_6bb41bcda1a535c8acd0585ba4efd94e",
+                {
+                    center: [42.5, 12.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3b52e651eae8b8190032fc7f5f0a85e4 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3b52e651eae8b8190032fc7f5f0a85e4.addTo(map_6bb41bcda1a535c8acd0585ba4efd94e);
+        
+    
+            var marker_03656cbdd787c796f69470eec5de4c31 = L.marker(
+                [42.9596, 13.3522],
+                {
+}
+            ).addTo(map_6bb41bcda1a535c8acd0585ba4efd94e);
+        
+    
+            var icon_d965c34f34f0dd3d557ac4facd77cffe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eadbf3531f206f137b39f73ba6c4266d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14f6d0dd420f3a7112122720bff39a8c = $(`<div id="html_14f6d0dd420f3a7112122720bff39a8c" style="width: 100.0%; height: 100.0%;"><a href='https://www.idealista.it/en/immobile/13753219/' target='_blank'>Casale with annex, land and pool, Amandola, Marche, Italy</a></div>`)[0];
+                popup_eadbf3531f206f137b39f73ba6c4266d.setContent(html_14f6d0dd420f3a7112122720bff39a8c);
+            
+        
+
+        marker_03656cbdd787c796f69470eec5de4c31.bindPopup(popup_eadbf3531f206f137b39f73ba6c4266d)
+        ;
+
+        
+    
+    
+            marker_03656cbdd787c796f69470eec5de4c31.bindTooltip(
+                `<div>
+                     Casale with annex, land and pool, Amandola, Marche, Italy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_03656cbdd787c796f69470eec5de4c31.setIcon(icon_d965c34f34f0dd3d557ac4facd77cffe);
+            
+    
+            var marker_a8abb037271da7c49e427c3cd721c9fb = L.marker(
+                [43.4706, 13.0381],
+                {
+}
+            ).addTo(map_6bb41bcda1a535c8acd0585ba4efd94e);
+        
+    
+            var icon_08bb2f410fed5e83867f72f9fc5a76a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_763e773407556f6b6be6a81c5f136bb9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f51d28f0d7cdb22458a5eccf4c8c4c0a = $(`<div id="html_f51d28f0d7cdb22458a5eccf4c8c4c0a" style="width: 100.0%; height: 100.0%;"><a href='https://www.idealista.it/en/immobile/28254631/' target='_blank'>Farmhouse with 6 rooms and 7 bathrooms, Rosora, Ancona, Italy</a></div>`)[0];
+                popup_763e773407556f6b6be6a81c5f136bb9.setContent(html_f51d28f0d7cdb22458a5eccf4c8c4c0a);
+            
+        
+
+        marker_a8abb037271da7c49e427c3cd721c9fb.bindPopup(popup_763e773407556f6b6be6a81c5f136bb9)
+        ;
+
+        
+    
+    
+            marker_a8abb037271da7c49e427c3cd721c9fb.bindTooltip(
+                `<div>
+                     Farmhouse with 6 rooms and 7 bathrooms, Rosora, Ancona, Italy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a8abb037271da7c49e427c3cd721c9fb.setIcon(icon_08bb2f410fed5e83867f72f9fc5a76a8);
+            
+    
+            var marker_39dce7d0958d024f396ee2e4ec71db43 = L.marker(
+                [44.1452, 10.6323],
+                {
+}
+            ).addTo(map_6bb41bcda1a535c8acd0585ba4efd94e);
+        
+    
+            var icon_6bb81df858b8e5e850ac5bdd3ef936fc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_135389280e0a9e24f88d21ef45428462 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7cf91e0a19142d8bd1553a16905cc1a7 = $(`<div id="html_7cf91e0a19142d8bd1553a16905cc1a7" style="width: 100.0%; height: 100.0%;"><a href='https://www.idealista.it/en/immobile/29515832/' target='_blank'>Farmhouse in viale Abetone, Abetone, Tuscany, Italy</a></div>`)[0];
+                popup_135389280e0a9e24f88d21ef45428462.setContent(html_7cf91e0a19142d8bd1553a16905cc1a7);
+            
+        
+
+        marker_39dce7d0958d024f396ee2e4ec71db43.bindPopup(popup_135389280e0a9e24f88d21ef45428462)
+        ;
+
+        
+    
+    
+            marker_39dce7d0958d024f396ee2e4ec71db43.bindTooltip(
+                `<div>
+                     Farmhouse in viale Abetone, Abetone, Tuscany, Italy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_39dce7d0958d024f396ee2e4ec71db43.setIcon(icon_6bb81df858b8e5e850ac5bdd3ef936fc);
+            
+    
+            var marker_dcf112cfcad741e4dffa227693a41d7d = L.marker(
+                [42.8694, 12.0067],
+                {
+}
+            ).addTo(map_6bb41bcda1a535c8acd0585ba4efd94e);
+        
+    
+            var icon_716a2531025190168c323980fa529ba4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_335ae8e92cbc4b5b470dc461d704ef9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_666404dd7020ff001fb53dbd8f6f684e = $(`<div id="html_666404dd7020ff001fb53dbd8f6f684e" style="width: 100.0%; height: 100.0%;"><a href='https://www.idealista.it/en/immobile/21364516/' target='_blank'>Farmhouse in via Orvieto, Ficulle, Umbria, Italy</a></div>`)[0];
+                popup_335ae8e92cbc4b5b470dc461d704ef9e.setContent(html_666404dd7020ff001fb53dbd8f6f684e);
+            
+        
+
+        marker_dcf112cfcad741e4dffa227693a41d7d.bindPopup(popup_335ae8e92cbc4b5b470dc461d704ef9e)
+        ;
+
+        
+    
+    
+            marker_dcf112cfcad741e4dffa227693a41d7d.bindTooltip(
+                `<div>
+                     Farmhouse in via Orvieto, Ficulle, Umbria, Italy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dcf112cfcad741e4dffa227693a41d7d.setIcon(icon_716a2531025190168c323980fa529ba4);
+            
+    
+            var marker_5d242211bcdad75421e6c21afe0a4fdb = L.marker(
+                [43.0707, 12.6196],
+                {
+}
+            ).addTo(map_6bb41bcda1a535c8acd0585ba4efd94e);
+        
+    
+            var icon_dffd5628320796b7b204d2628df66395 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f00163f714d6540c60bb23365cdd78f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf3673c2cf3529b72f2f3647ba1aa6ed = $(`<div id="html_cf3673c2cf3529b72f2f3647ba1aa6ed" style="width: 100.0%; height: 100.0%;"><a href='https://www.idealista.it/en/immobile/31936206/' target='_blank'>Farmhouse in Pian della Pieve - Porziano, Assisi, Umbria, Italy</a></div>`)[0];
+                popup_f00163f714d6540c60bb23365cdd78f5.setContent(html_cf3673c2cf3529b72f2f3647ba1aa6ed);
+            
+        
+
+        marker_5d242211bcdad75421e6c21afe0a4fdb.bindPopup(popup_f00163f714d6540c60bb23365cdd78f5)
+        ;
+
+        
+    
+    
+            marker_5d242211bcdad75421e6c21afe0a4fdb.bindTooltip(
+                `<div>
+                     Farmhouse in Pian della Pieve - Porziano, Assisi, Umbria, Italy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5d242211bcdad75421e6c21afe0a4fdb.setIcon(icon_dffd5628320796b7b204d2628df66395);
+            
+    
+            var marker_fcdb5514891341bd6655cd2a360cfa21 = L.marker(
+                [43.1425, 13.2414],
+                {
+}
+            ).addTo(map_6bb41bcda1a535c8acd0585ba4efd94e);
+        
+    
+            var icon_8a1dcd4e80aab9f682f40c9ea8174156 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_744fd6d610d9fd3df5c891068342fabf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88d529f45c2af6b31a6ce92748a9b770 = $(`<div id="html_88d529f45c2af6b31a6ce92748a9b770" style="width: 100.0%; height: 100.0%;"><a href='https://www.idealista.it/immobile/29055357/' target='_blank'>Residential building with tower, Macchie, San Ginesio, Marche, Italy</a></div>`)[0];
+                popup_744fd6d610d9fd3df5c891068342fabf.setContent(html_88d529f45c2af6b31a6ce92748a9b770);
+            
+        
+
+        marker_fcdb5514891341bd6655cd2a360cfa21.bindPopup(popup_744fd6d610d9fd3df5c891068342fabf)
+        ;
+
+        
+    
+    
+            marker_fcdb5514891341bd6655cd2a360cfa21.bindTooltip(
+                `<div>
+                     Residential building with tower, Macchie, San Ginesio, Marche, Italy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fcdb5514891341bd6655cd2a360cfa21.setIcon(icon_8a1dcd4e80aab9f682f40c9ea8174156);
+            
+    
+            var marker_b0abf7ab84693acf0732a4e6e345507a = L.marker(
+                [43.2872, 12.1423],
+                {
+}
+            ).addTo(map_6bb41bcda1a535c8acd0585ba4efd94e);
+        
+    
+            var icon_2806f0f71193c2cc449c189acae40c66 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b4ce568be5808c95f2ffd6fd5b286fa0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbcdb5d6920adcc46b190b2b06e57082 = $(`<div id="html_cbcdb5d6920adcc46b190b2b06e57082" style="width: 100.0%; height: 100.0%;"><a href='https://www.idealista.it/immobile/25066978/' target='_blank'>Villa with lake view and pool, via Canutola, Lisciano Niccone, Umbria, Italy</a></div>`)[0];
+                popup_b4ce568be5808c95f2ffd6fd5b286fa0.setContent(html_cbcdb5d6920adcc46b190b2b06e57082);
+            
+        
+
+        marker_b0abf7ab84693acf0732a4e6e345507a.bindPopup(popup_b4ce568be5808c95f2ffd6fd5b286fa0)
+        ;
+
+        
+    
+    
+            marker_b0abf7ab84693acf0732a4e6e345507a.bindTooltip(
+                `<div>
+                     Villa with lake view and pool, via Canutola, Lisciano Niccone, Umbria, Italy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b0abf7ab84693acf0732a4e6e345507a.setIcon(icon_2806f0f71193c2cc449c189acae40c66);
+            
+    
+            var marker_4b97f18aee8e731add9e05a9274493a6 = L.marker(
+                [42.7385, 11.9789],
+                {
+}
+            ).addTo(map_6bb41bcda1a535c8acd0585ba4efd94e);
+        
+    
+            var icon_ec5ccbc9efbcf236d1f36b36fde76f04 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5df880d2c2437d51f5039a382f97866 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f34e86b9960008e89898fcb0ea58f0fb = $(`<div id="html_f34e86b9960008e89898fcb0ea58f0fb" style="width: 100.0%; height: 100.0%;"><a href='https://www.idealista.it/immobile/27674806/' target='_blank'>Farmhouse in Castel Viscardo, Orvietano, Umbria, Italy</a></div>`)[0];
+                popup_e5df880d2c2437d51f5039a382f97866.setContent(html_f34e86b9960008e89898fcb0ea58f0fb);
+            
+        
+
+        marker_4b97f18aee8e731add9e05a9274493a6.bindPopup(popup_e5df880d2c2437d51f5039a382f97866)
+        ;
+
+        
+    
+    
+            marker_4b97f18aee8e731add9e05a9274493a6.bindTooltip(
+                `<div>
+                     Farmhouse in Castel Viscardo, Orvietano, Umbria, Italy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4b97f18aee8e731add9e05a9274493a6.setIcon(icon_ec5ccbc9efbcf236d1f36b36fde76f04);
+            
+    
+            var marker_e31133827698395176e70129d85838b0 = L.marker(
+                [42.1417, 12.4208],
+                {
+}
+            ).addTo(map_6bb41bcda1a535c8acd0585ba4efd94e);
+        
+    
+            var icon_5f772bb21cbbf40e1b34f9937c223e9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ff18c8358b52e3a72f7af51d5a526d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63a4236447fdbf61c50d898284366f83 = $(`<div id="html_63a4236447fdbf61c50d898284366f83" style="width: 100.0%; height: 100.0%;"><a href='https://www.idealista.it/immobile/32270339/' target='_blank'>Villa in strada Provinciale, Campagnano di Roma, Lazio, Italy</a></div>`)[0];
+                popup_9ff18c8358b52e3a72f7af51d5a526d4.setContent(html_63a4236447fdbf61c50d898284366f83);
+            
+        
+
+        marker_e31133827698395176e70129d85838b0.bindPopup(popup_9ff18c8358b52e3a72f7af51d5a526d4)
+        ;
+
+        
+    
+    
+            marker_e31133827698395176e70129d85838b0.bindTooltip(
+                `<div>
+                     Villa in strada Provinciale, Campagnano di Roma, Lazio, Italy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e31133827698395176e70129d85838b0.setIcon(icon_5f772bb21cbbf40e1b34f9937c223e9a);
+            
+    
+            var marker_23069da089be3b9bb1d9dc9ed2f3147d = L.marker(
+                [42.2156, 12.2356],
+                {
+}
+            ).addTo(map_6bb41bcda1a535c8acd0585ba4efd94e);
+        
+    
+            var icon_9475ae9baea69c744d8705cc9fc6a41b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8fd544215b5ed53879b6a22711256e80 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f2de0641317df2b12b9f7e0e2388036 = $(`<div id="html_7f2de0641317df2b12b9f7e0e2388036" style="width: 100.0%; height: 100.0%;"><a href='https://www.idealista.it/immobile/24747346/' target='_blank'>Villa in via Pietro Salvatori, Monterosi, Lazio, Italy</a></div>`)[0];
+                popup_8fd544215b5ed53879b6a22711256e80.setContent(html_7f2de0641317df2b12b9f7e0e2388036);
+            
+        
+
+        marker_23069da089be3b9bb1d9dc9ed2f3147d.bindPopup(popup_8fd544215b5ed53879b6a22711256e80)
+        ;
+
+        
+    
+    
+            marker_23069da089be3b9bb1d9dc9ed2f3147d.bindTooltip(
+                `<div>
+                     Villa in via Pietro Salvatori, Monterosi, Lazio, Italy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_23069da089be3b9bb1d9dc9ed2f3147d.setIcon(icon_9475ae9baea69c744d8705cc9fc6a41b);
+            
+    
+            var marker_682119affd7e5b98dae23dbd865177cc = L.marker(
+                [44.1167, 10.7667],
+                {
+}
+            ).addTo(map_6bb41bcda1a535c8acd0585ba4efd94e);
+        
+    
+            var icon_0319045839d79e7e424ccf380921c13d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_757fb774409d16d328b83226e2f251cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f4dc489dd87f1ec16fe1303aa849a82 = $(`<div id="html_0f4dc489dd87f1ec16fe1303aa849a82" style="width: 100.0%; height: 100.0%;"><a href='https://www.idealista.it/immobile/29884810/' target='_blank'>Mountain house in croce arcana, Abetone Cutigliano, Tuscany, Italy</a></div>`)[0];
+                popup_757fb774409d16d328b83226e2f251cb.setContent(html_0f4dc489dd87f1ec16fe1303aa849a82);
+            
+        
+
+        marker_682119affd7e5b98dae23dbd865177cc.bindPopup(popup_757fb774409d16d328b83226e2f251cb)
+        ;
+
+        
+    
+    
+            marker_682119affd7e5b98dae23dbd865177cc.bindTooltip(
+                `<div>
+                     Mountain house in croce arcana, Abetone Cutigliano, Tuscany, Italy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_682119affd7e5b98dae23dbd865177cc.setIcon(icon_0319045839d79e7e424ccf380921c13d);
+            
+    
+            var marker_de7642e56d3c3cba8c48415a136a47c4 = L.marker(
+                [43.5523, 12.6476],
+                {
+}
+            ).addTo(map_6bb41bcda1a535c8acd0585ba4efd94e);
+        
+    
+            var icon_0c030cdf477587a4beae3e16849e2d7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c567f22e42e3de03cb064bc295d795ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7682383b5c376b5f2f3669030c5fe61 = $(`<div id="html_e7682383b5c376b5f2f3669030c5fe61" style="width: 100.0%; height: 100.0%;"><a href='https://www.idealista.it/en/immobile/30476744/' target='_blank'>Villa with panoramic pool, Cagli, Marche, Italy</a></div>`)[0];
+                popup_c567f22e42e3de03cb064bc295d795ca.setContent(html_e7682383b5c376b5f2f3669030c5fe61);
+            
+        
+
+        marker_de7642e56d3c3cba8c48415a136a47c4.bindPopup(popup_c567f22e42e3de03cb064bc295d795ca)
+        ;
+
+        
+    
+    
+            marker_de7642e56d3c3cba8c48415a136a47c4.bindTooltip(
+                `<div>
+                     Villa with panoramic pool, Cagli, Marche, Italy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_de7642e56d3c3cba8c48415a136a47c4.setIcon(icon_0c030cdf477587a4beae3e16849e2d7b);
+            
+    
+            var marker_78294e1eaaef20c98fe22eeebcc9cc65 = L.marker(
+                [43.15, 12.4],
+                {
+}
+            ).addTo(map_6bb41bcda1a535c8acd0585ba4efd94e);
+        
+    
+            var icon_e5abe42300087c7fcbfede56fad871e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd1fe100ac0dd6fcab23cd25f121caff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_185fd148d8fbf6ad449616fcc6d1f5f8 = $(`<div id="html_185fd148d8fbf6ad449616fcc6d1f5f8" style="width: 100.0%; height: 100.0%;"><a href='https://www.idealista.it/en/immobile/30204064/' target='_blank'>Restored farmhouse with cottage, via Catignana, Umbria, Italy</a></div>`)[0];
+                popup_bd1fe100ac0dd6fcab23cd25f121caff.setContent(html_185fd148d8fbf6ad449616fcc6d1f5f8);
+            
+        
+
+        marker_78294e1eaaef20c98fe22eeebcc9cc65.bindPopup(popup_bd1fe100ac0dd6fcab23cd25f121caff)
+        ;
+
+        
+    
+    
+            marker_78294e1eaaef20c98fe22eeebcc9cc65.bindTooltip(
+                `<div>
+                     Restored farmhouse with cottage, via Catignana, Umbria, Italy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_78294e1eaaef20c98fe22eeebcc9cc65.setIcon(icon_e5abe42300087c7fcbfede56fad871e7);
+            
+    
+            var marker_1575781b1f1202b39920636a436add19 = L.marker(
+                [43.85, 11.5333],
+                {
+}
+            ).addTo(map_6bb41bcda1a535c8acd0585ba4efd94e);
+        
+    
+            var icon_4da0b2d4653aa2bd47cc42ce09d13fb2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_32578092fa7e66a204f8f95feb1f424c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_407f1533b305b17ca16a53a6e2a4a44b = $(`<div id="html_407f1533b305b17ca16a53a6e2a4a44b" style="width: 100.0%; height: 100.0%;"><a href='https://www.idealista.it/en/immobile/32264712/' target='_blank'>Villa in località Caiano 'Paternò, Londa, Tuscany, Italy</a></div>`)[0];
+                popup_32578092fa7e66a204f8f95feb1f424c.setContent(html_407f1533b305b17ca16a53a6e2a4a44b);
+            
+        
+
+        marker_1575781b1f1202b39920636a436add19.bindPopup(popup_32578092fa7e66a204f8f95feb1f424c)
+        ;
+
+        
+    
+    
+            marker_1575781b1f1202b39920636a436add19.bindTooltip(
+                `<div>
+                     Villa in località Caiano 'Paternò, Londa, Tuscany, Italy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1575781b1f1202b39920636a436add19.setIcon(icon_4da0b2d4653aa2bd47cc42ce09d13fb2);
+            
+    
+            var marker_86d360d7f01291e322bae44ad287e62a = L.marker(
+                [43.5667, 13.05],
+                {
+}
+            ).addTo(map_6bb41bcda1a535c8acd0585ba4efd94e);
+        
+    
+            var icon_f8451e9df8372683d740b28a59484564 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a11dce5ebeb72edd6ec98e6b5edea76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_595e39e183c4ed71ba4c804edf06d41f = $(`<div id="html_595e39e183c4ed71ba4c804edf06d41f" style="width: 100.0%; height: 100.0%;"><a href='https://www.idealista.it/en/immobile/30392314/' target='_blank'>Independent house in via Osteria, Serra de' Conti, Marche, Italy</a></div>`)[0];
+                popup_3a11dce5ebeb72edd6ec98e6b5edea76.setContent(html_595e39e183c4ed71ba4c804edf06d41f);
+            
+        
+
+        marker_86d360d7f01291e322bae44ad287e62a.bindPopup(popup_3a11dce5ebeb72edd6ec98e6b5edea76)
+        ;
+
+        
+    
+    
+            marker_86d360d7f01291e322bae44ad287e62a.bindTooltip(
+                `<div>
+                     Independent house in via Osteria, Serra de' Conti, Marche, Italy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_86d360d7f01291e322bae44ad287e62a.setIcon(icon_f8451e9df8372683d740b28a59484564);
+            
+    
+            var marker_8b02895acf23edd689606e8e45f14e81 = L.marker(
+                [43.46, 12.24],
+                {
+}
+            ).addTo(map_6bb41bcda1a535c8acd0585ba4efd94e);
+        
+    
+            var icon_e5f3a5ff45e4b296cec68f42edb0b745 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e69aa67ea400c8a5e6acc518f17683b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b2d510aca21131afdd8054e6ef3bcec = $(`<div id="html_0b2d510aca21131afdd8054e6ef3bcec" style="width: 100.0%; height: 100.0%;"><a href='https://www.idealista.it/en/immobile/30094414/' target='_blank'>Farmhouse in Badiali - Fraccano, Città di Castello, Umbria, Italy</a></div>`)[0];
+                popup_e69aa67ea400c8a5e6acc518f17683b6.setContent(html_0b2d510aca21131afdd8054e6ef3bcec);
+            
+        
+
+        marker_8b02895acf23edd689606e8e45f14e81.bindPopup(popup_e69aa67ea400c8a5e6acc518f17683b6)
+        ;
+
+        
+    
+    
+            marker_8b02895acf23edd689606e8e45f14e81.bindTooltip(
+                `<div>
+                     Farmhouse in Badiali - Fraccano, Città di Castello, Umbria, Italy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8b02895acf23edd689606e8e45f14e81.setIcon(icon_e5f3a5ff45e4b296cec68f42edb0b745);
+            
+    
+            var marker_9f8c9c4ebb349199b6f31add5ef67969 = L.marker(
+                [43.65, 12.4],
+                {
+}
+            ).addTo(map_6bb41bcda1a535c8acd0585ba4efd94e);
+        
+    
+            var icon_9a5440f0b807c69e9bb73d976dd32e6e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb02b4a4096a85e033077e93dabf95fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_207c7f4f44c5c8306df3b2d325302ac7 = $(`<div id="html_207c7f4f44c5c8306df3b2d325302ac7" style="width: 100.0%; height: 100.0%;"><a href='https://www.idealista.it/en/immobile/32219565/' target='_blank'>Farmhouse in via Fiume, Borgo Pace, Marche, Italy</a></div>`)[0];
+                popup_bb02b4a4096a85e033077e93dabf95fd.setContent(html_207c7f4f44c5c8306df3b2d325302ac7);
+            
+        
+
+        marker_9f8c9c4ebb349199b6f31add5ef67969.bindPopup(popup_bb02b4a4096a85e033077e93dabf95fd)
+        ;
+
+        
+    
+    
+            marker_9f8c9c4ebb349199b6f31add5ef67969.bindTooltip(
+                `<div>
+                     Farmhouse in via Fiume, Borgo Pace, Marche, Italy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9f8c9c4ebb349199b6f31add5ef67969.setIcon(icon_9a5440f0b807c69e9bb73d976dd32e6e);
+            
+    
+            var marker_7f5f6ab93c517a105e64aacfd0420a36 = L.marker(
+                [42.85, 12.2],
+                {
+}
+            ).addTo(map_6bb41bcda1a535c8acd0585ba4efd94e);
+        
+    
+            var icon_72a94d9342b807da722f4ebe79981686 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f5bb2dbb7a64dd6ded916be4443044b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed2a926ebdc3413ff5419ad95d652349 = $(`<div id="html_ed2a926ebdc3413ff5419ad95d652349" style="width: 100.0%; height: 100.0%;"><a href='https://www.idealista.it/en/immobile/22661616/' target='_blank'>Farmhouse in Ospedaletto Monte Peglia, Umbria, Italy</a></div>`)[0];
+                popup_7f5bb2dbb7a64dd6ded916be4443044b.setContent(html_ed2a926ebdc3413ff5419ad95d652349);
+            
+        
+
+        marker_7f5f6ab93c517a105e64aacfd0420a36.bindPopup(popup_7f5bb2dbb7a64dd6ded916be4443044b)
+        ;
+
+        
+    
+    
+            marker_7f5f6ab93c517a105e64aacfd0420a36.bindTooltip(
+                `<div>
+                     Farmhouse in Ospedaletto Monte Peglia, Umbria, Italy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7f5f6ab93c517a105e64aacfd0420a36.setIcon(icon_72a94d9342b807da722f4ebe79981686);
+            
+    
+            var marker_0cd375e92638c24c3fc4b95498b9dbac = L.marker(
+                [43.5833, 12.4167],
+                {
+}
+            ).addTo(map_6bb41bcda1a535c8acd0585ba4efd94e);
+        
+    
+            var icon_36b4071703d97d771409005adda68085 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a10c84caa63a391d83a63d54bf2b3092 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7b98d017c5639065dd6d14b40466ed9 = $(`<div id="html_a7b98d017c5639065dd6d14b40466ed9" style="width: 100.0%; height: 100.0%;"><a href='https://www.idealista.it/en/immobile/30093743/' target='_blank'>Independent house in Apecchio, Catria-Nerone, Marche, Italy</a></div>`)[0];
+                popup_a10c84caa63a391d83a63d54bf2b3092.setContent(html_a7b98d017c5639065dd6d14b40466ed9);
+            
+        
+
+        marker_0cd375e92638c24c3fc4b95498b9dbac.bindPopup(popup_a10c84caa63a391d83a63d54bf2b3092)
+        ;
+
+        
+    
+    
+            marker_0cd375e92638c24c3fc4b95498b9dbac.bindTooltip(
+                `<div>
+                     Independent house in Apecchio, Catria-Nerone, Marche, Italy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0cd375e92638c24c3fc4b95498b9dbac.setIcon(icon_36b4071703d97d771409005adda68085);
+            
+    
+            var heat_map_485b3a6e360143e7374940f2c88182b5 = L.heatLayer(
+                [[42.9596, 13.3522], [43.4706, 13.0381], [44.1452, 10.6323], [42.8694, 12.0067], [43.0707, 12.6196], [43.1425, 13.2414], [43.2872, 12.1423], [42.7385, 11.9789], [42.1417, 12.4208], [42.2156, 12.2356], [44.1167, 10.7667], [43.5523, 12.6476], [43.0707, 12.6196], [43.15, 12.4], [42.1417, 12.4208], [43.85, 11.5333], [43.5667, 13.05], [43.5523, 12.6476], [43.15, 12.4], [42.1417, 12.4208], [43.85, 11.5333], [43.5667, 13.05], [43.46, 12.24], [44.1452, 10.6323], [43.65, 12.4], [43.15, 12.4], [43.15, 12.4], [42.85, 12.2], [43.5833, 12.4167]],
+                {
+  "minOpacity": 0.6,
+  "maxZoom": 13,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_485b3a6e360143e7374940f2c88182b5.addTo(map_6bb41bcda1a535c8acd0585ba4efd94e);
+        
+</script>
+</html>
